@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import getRandomRange from '../get-random-range';
+import getRandomRange from '../get-random-range.js';
 import gameLogic from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
