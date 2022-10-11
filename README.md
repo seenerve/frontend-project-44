@@ -5,4 +5,4 @@
 
 
 1. brain-even demonstration
-[![asciicast](https://asciinema.org/a/G6xFX7GWODFMGPWbf8kieeIka.svg)](https://asciinema.org/a/G6xFX7GWODFMGPWbf8kieeIka)
+<script id="asciicast-G6xFX7GWODFMGPWbf8kieeIka" src="https://asciinema.org/a/G6xFX7GWODFMGPWbf8kieeIka.js" async></script>
