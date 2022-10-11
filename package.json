@@ -18,7 +18,8 @@
   "homepage": "https://github.com/seenerve/frontend-project-44#readme",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
