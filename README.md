@@ -6,3 +6,6 @@
 
 1. brain-even demonstration
 <a href="https://asciinema.org/a/G6xFX7GWODFMGPWbf8kieeIka" target="_blank"><img src="https://asciinema.org/a/G6xFX7GWODFMGPWbf8kieeIka.svg" /></a>
+
+2. brain-calc demonstration 
+<a href="https://asciinema.org/a/nPThmZrGu8lblsrl03WaYHEPr" target="_blank"><img src="https://asciinema.org/a/nPThmZrGu8lblsrl03WaYHEPr.svg" /></a>

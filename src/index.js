@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const RoundsCount = 3;
+const roundsCount = 3;
 
 const gameLogic = (description, game) => {
   console.log('Welcome to the Brain Games!');
@@ -12,7 +12,6 @@ const gameLogic = (description, game) => {
     const [question, expectedAnswer] = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    // userAnswer = (typeof expectedAnswer === 'number') ? Number(userAnswer) : userAnswer;
     if (expectedAnswer === userAnswer) {
       console.log('Correct!');
     } else {
