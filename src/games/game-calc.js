@@ -5,13 +5,22 @@ import gameLogic from '../index.js';
 
 const description = 'What is the result of the expression?';
 const calc = (firstValue, secondValue, mark) => {
-  if (mark === '+') {
-    return firstValue + secondValue;
-  } if (mark === '-') {
-    return firstValue - secondValue;
-  } if (mark === '*') {
-    return firstValue * secondValue;
+  let result = 0;
+
+  switch (mark) {
+    case '+':
+      result = firstValue + secondValue;
+      break;
+    case '-':
+      result = firstValue - secondValue;
+      break;
+    case '*':
+      result = firstValue * secondValue;
+      break;
+    default:
+      result = null;
   }
+  return String(result);
 };
 
 const calcLogic = () => {
