@@ -1,3 +1,5 @@
+36 lines (36 sloc)  1.16 KB
+
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
@@ -24,6 +26,9 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
