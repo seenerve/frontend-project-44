@@ -22,10 +22,10 @@ const calcLogic = () => {
   const answer = String(calc(firstValue, secondValue, mark));
   const question = `${firstValue} ${mark} ${secondValue}`;
   return [question, answer];
-}
+};
 
 const calcGame = () => {
   gameLogic(description, calcLogic);
-}
+};
 
 export default calcGame;
