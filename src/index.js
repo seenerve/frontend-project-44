@@ -6,7 +6,7 @@ const createGameLogic = (description, game) => {
   console.log(`Hello, ${userName}!`);
   console.log(description);
 
-  const maxRoundCount = 3
+  const maxRoundCount = 3;
   for (let i = 0; i < maxRoundCount; i += 1) {
     const [question, expectedAnswer] = game();
     console.log(`Question: ${question}`);
