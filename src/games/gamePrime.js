@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import getRandomRange from '../get-random-range.js';
-import gameLogic from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
+import createGameLogic from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -14,17 +14,15 @@ const isPrime = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const num = getRandomRange(2, 500);
+  const question = getRandomNumber(2, 500);
 
-  const question = `${num}`;
-
-  const expectedAnswer = isPrime(num) ? 'yes' : 'no';
+  const expectedAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [question, expectedAnswer];
 };
 
-const primeGame = () => {
-  gameLogic(description, getQuestionAndAnswer);
+const startPrimeGame = () => {
+  createGameLogic(description, getQuestionAndAnswer);
 };
 
-export default primeGame;
+export default startPrimeGame;
