@@ -22,6 +22,7 @@ const getProgression = (firstNumOfProg, stepOfProg, lengthOfProg) => {
 };
 
 const getQuestionAndAnswer = () => {
+  // eslint-disable-next-line max-len
   const progressionLength = getRandomNumber(minNumberOfLengthProgression, maxNumberOfLengthProgression);
   const firstNumberProgression = getRandomNumber(minNumber, maxNumber);
   const progressionStep = getRandomNumber(minNumberOfStepProgression, maxNumberOfStepProgression);
