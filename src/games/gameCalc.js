@@ -20,8 +20,8 @@ const calc = (firstValue, secondValue, mark) => {
 };
 
 const calcLogic = () => {
-  const firstMaxNumber = getRandomNumber(0, 100);
-  const secondMaxNumber = getRandomNumber(0, 100);
+  const firstMaxNumber = getRandomNumber(0, 50);
+  const secondMaxNumber = getRandomNumber(0, 50);
   const mark = marks[getRandomNumber(0, marks.length - 1)];
   const answer = String(calc(firstMaxNumber, secondMaxNumber, mark));
   const question = `${firstMaxNumber} ${mark} ${secondMaxNumber}`;
