@@ -5,6 +5,8 @@ import createGameLogic from '../index.js';
 
 const description = 'What is the result of the expression?';
 const marks = ['+', '-', '*'];
+const minNumber = 0;
+const maxNumber = 50;
 
 const calc = (firstValue, secondValue, mark) => {
   switch (mark) {
@@ -20,11 +22,11 @@ const calc = (firstValue, secondValue, mark) => {
 };
 
 const calcLogic = () => {
-  const firstMaxNumber = getRandomNumber(0, 50);
-  const secondMaxNumber = getRandomNumber(0, 50);
+  const firstValue = getRandomNumber(minNumber, maxNumber);
+  const secondValue = getRandomNumber(minNumber, maxNumber);
   const mark = marks[getRandomNumber(0, marks.length - 1)];
-  const answer = String(calc(firstMaxNumber, secondMaxNumber, mark));
-  const question = `${firstMaxNumber} ${mark} ${secondMaxNumber}`;
+  const answer = String(calc(firstValue, secondValue, mark));
+  const question = `${firstValue} ${mark} ${secondValue}`;
   return [question, answer];
 };
 
