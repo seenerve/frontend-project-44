@@ -9,7 +9,7 @@ const isEven = (number) => number % 2 === 0;
 
 const evenLogic = () => {
   const question = getRandomNumber(minNumber, maxNumber);
-  const answer = isEven(maxNumber) ? 'yes' : 'no';
+  const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 };
 const startEvenGame = () => {
