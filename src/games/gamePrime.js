@@ -14,11 +14,11 @@ const isPrime = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = getRandomNumber(2, 500);
+  const inspectRandomNumber = getRandomNumber(2, 500);
 
-  const expectedAnswer = isPrime(question) ? 'yes' : 'no';
+  const expectedAnswer = isPrime(inspectRandomNumber) ? 'yes' : 'no';
 
-  return [question, expectedAnswer];
+  return [inspectRandomNumber, expectedAnswer];
 };
 
 const startPrimeGame = () => {

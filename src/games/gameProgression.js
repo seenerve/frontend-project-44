@@ -15,14 +15,14 @@ const getProgression = (firstNumOfProg, stepOfProg, lengthOfProg) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const lengthOfProg = getRandomNumber(10, 20);
-  const firstNumOfProg = getRandomNumber(1, 10);
-  const stepOfProg = getRandomNumber(1, 5);
-  const progression = getProgression(firstNumOfProg, stepOfProg, lengthOfProg);
-  const indexForDots = getRandomNumber(0, 10);
+  const progressionLength = getRandomNumber(10, 20);
+  const firstNumberOfProgression = getRandomNumber(1, 10);
+  const progressionStep = getRandomNumber(1, 5);
+  const progression = getProgression(firstNumberOfProgression, progressionStep, progressionLength);
+  const whichNumberUnknown = getRandomNumber(0, 10);
 
-  const expectedAnswer = String(progression[indexForDots]);
-  progression[indexForDots] = '..';
+  const expectedAnswer = String(progression[whichNumberUnknown]);
+  progression[whichNumberUnknown] = '..';
   const question = progression.join(' ');
 
   return [question, expectedAnswer];

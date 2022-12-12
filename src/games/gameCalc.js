@@ -20,11 +20,11 @@ const calc = (firstValue, secondValue, mark) => {
 };
 
 const calcLogic = () => {
-  const firstValue = getRandomNumber(0, 100);
-  const secondValue = getRandomNumber(0, 100);
+  const firstRandomOperor = getRandomNumber(0, 100);
+  const secondRandomOperor = getRandomNumber(0, 100);
   const mark = marks[getRandomNumber(0, marks.length - 1)];
-  const answer = String(calc(firstValue, secondValue, mark));
-  const question = `${firstValue} ${mark} ${secondValue}`;
+  const answer = String(calc(firstRandomOperor, secondRandomOperor, mark));
+  const question = `${firstRandomOperor} ${mark} ${secondRandomOperor}`;
   return [question, answer];
 };
 

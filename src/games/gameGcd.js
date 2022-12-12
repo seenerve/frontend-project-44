@@ -11,12 +11,12 @@ const getGcd = (rndNum1, rndNum2) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const rndNum1 = getRandomNumber(1, 100);
-  const rndNum2 = getRandomNumber(1, 100);
+  const firstRandomValue = getRandomNumber(1, 100);
+  const secondRandomValue = getRandomNumber(1, 100);
 
-  const question = `${rndNum1} ${rndNum2}`;
+  const question = `${firstRandomValue} ${secondRandomValue}`;
 
-  const expectedAnswer = getGcd(rndNum1, rndNum2);
+  const expectedAnswer = getGcd(firstRandomValue, secondRandomValue);
 
   return [question, String(expectedAnswer)];
 };
