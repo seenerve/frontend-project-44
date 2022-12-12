@@ -16,13 +16,13 @@ const getProgression = (firstNumOfProg, stepOfProg, lengthOfProg) => {
 
 const getQuestionAndAnswer = () => {
   const progressionLength = getRandomNumber(10, 20);
-  const firstNumberOfProgression = getRandomNumber(1, 10);
+  const maxNumber = getRandomNumber(1, 10);
   const progressionStep = getRandomNumber(1, 5);
-  const progression = getProgression(firstNumberOfProgression, progressionStep, progressionLength);
-  const whichNumberUnknown = getRandomNumber(0, 10);
+  const progression = getProgression(maxNumber, progressionStep, progressionLength);
+  const maxIndex = getRandomNumber(0, 10);
 
-  const expectedAnswer = String(progression[whichNumberUnknown]);
-  progression[whichNumberUnknown] = '..';
+  const expectedAnswer = String(progression[maxIndex]);
+  progression[maxIndex] = '..';
   const question = progression.join(' ');
 
   return [question, expectedAnswer];
